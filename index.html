@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ExpenseFlow 360</title>
+    <style>
+        :root {
+            --bg: #F3F6FB;
+            --surface: #FFFFFF;
+            --surface-alt: #E9EFF8;
+            --border: #D3DFEE;
+            --text: #0F172A;
+            --muted: #475569;
+            --accent: #0F2942;
+            --badge-bg: #D1FAE5;
+            --badge-text: #059669;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #070D17;
+                --surface: #0F1826;
+                --surface-alt: #172438;
+                --border: #283A57;
+                --text: #F1F5F9;
+                --muted: #94A3B8;
+                --accent: #10B981;
+                --badge-bg: #064E3B;
+                --badge-text: #10B981;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            margin: 0;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 22px 24px;
+            margin-bottom: 16px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: var(--badge-bg);
+            color: var(--badge-text);
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 999px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0 0 6px 0;
+            font-size: 26px;
+            color: var(--text);
+        }
+        .subtitle {
+            margin: 0 0 14px 0;
+            font-size: 13px;
+            color: var(--muted);
+        }
+        h2 {
+            margin: 0 0 10px 0;
+            font-size: 17px;
+            color: var(--accent);
+        }
+        p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: var(--muted);
+        }
+        p:last-child { margin-bottom: 0; }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+        li:last-child { margin-bottom: 0; }
+        .footer-card {
+            background-color: var(--surface-alt);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 18px 24px;
+        }
+        a {
+            color: var(--accent);
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .copyright {
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <span class="badge">ExpenseFlow 360 • Tech Nest Studio</span>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Effective Date: November 21, 2026</p>
+        <p>ExpenseFlow 360 is built on an offline-first architecture designed to keep your financial life private. This policy explains what data stays on your device, how optional services operate, and your privacy rights.</p>
+    </div>
+
+    <div class="card">
+        <h2>1. Offline-First Financial Data Storage</h2>
+        <ul>
+            <li>All accounts, wallets, income/expense transactions, transfers, budgets, savings goals, scheduled bills, debt records, and categories are stored locally on your device using Android Room SQLite and Preferences DataStore.</li>
+            <li>Tech Nest Studio does not require account registration and does not collect, upload, view, sell, or back up your personal financial ledger to any remote servers.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>2. App Lock &amp; Cryptographic PIN Protection</h2>
+        <ul>
+            <li>Enabling the 4-digit PIN Lock protects access to the app on your device.</li>
+            <li>Your PIN is never stored in plain text; it is combined with a local salt and hashed on-device before persistence.</li>
+            <li>Because no data is sent to a server, forgetting your PIN cannot be reset remotely and may require clearing app storage.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>3. PDF Financial Reports &amp; Exports</h2>
+        <ul>
+            <li>PDF financial summaries are rendered locally on your device using Android's PdfDocument engine.</li>
+            <li>Exported files are written only to the folder you pick via Storage Access Framework or shared temporarily via FileProvider when you tap Share.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>4. Advertising &amp; Google UMP Privacy Consent</h2>
+        <ul>
+            <li>The Free tier displays frequency-capped advertisements via Google AdMob.</li>
+            <li>Where required by regional regulations (such as EEA/UK/US states), Google's User Messaging Platform (UMP) requests your consent before loading personalized or non-personalized ads, and you can update preferences anytime in Settings.</li>
+            <li>Upgrading to ExpenseFlow 360 Premium completely disables all ad requests and removes every ad placement across the app.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>5. Google Play Billing &amp; Subscriptions</h2>
+        <ul>
+            <li>Monthly, 6-Month, and Yearly Premium subscriptions are processed exclusively by Google Play Billing.</li>
+            <li>Tech Nest Studio never accesses or stores your credit card, bank account, or billing address details—only non-sensitive entitlement status tokens returned by Google Play.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>6. Device Permissions Used</h2>
+        <ul>
+            <li><strong>INTERNET &amp; ACCESS_NETWORK_STATE:</strong> Used solely for Google Play Billing entitlement checks, AdMob ad serving (Free tier), and UMP privacy consent.</li>
+            <li><strong>POST_NOTIFICATIONS (Optional, Android 13+):</strong> Requested only if you turn on local Budget Threshold Alerts or Daily Logging Reminders, which run locally via Android WorkManager.</li>
+            <li>No location, camera, microphone, contacts, or broad storage permissions are requested.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>7. Children's Privacy &amp; Policy Updates</h2>
+        <ul>
+            <li>ExpenseFlow 360 is a general personal and small-business finance tool and is not intended for children under 13 years of age.</li>
+            <li>We may update this Privacy Policy when new features or regulatory requirements arise. Updated versions are published directly inside the app and on this page.</li>
+        </ul>
+    </div>
+
+    <div class="footer-card">
+        <h2>Privacy Questions &amp; Requests</h2>
+        <p>If you have questions about how ExpenseFlow 360 handles privacy or permissions, reach out to our team at <a href="mailto:contacttectneststudio@gmail.com">contacttectneststudio@gmail.com</a>.</p>
+        <p class="copyright">&copy; 2026 Tech Nest Studio &bull; ExpenseFlow 360. All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>
